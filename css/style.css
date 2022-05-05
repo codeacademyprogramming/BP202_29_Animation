@@ -1,0 +1,35 @@
+
+.boxes{
+
+    
+}
+
+.boxes .box{
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transform: rotate(-35deg);
+    background-color: orangered;
+    animation-name: boxDrive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes boxDrive {
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 200px;
+        transform: rotate(35deg);
+    }
+    100%{
+        left: 0px;
+        transform: rotate(-35deg);
+    }
+
+}
